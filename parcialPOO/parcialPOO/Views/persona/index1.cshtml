@@ -1,0 +1,29 @@
+﻿@model parcialPOO.Models.cajero
+@{
+    ViewBag.Title = "index";
+}
+
+<h2>index</h2>
+
+<div>
+   
+  @using (Html.BeginForm("index1", "persona", FormMethod.Post)) 
+  {
+      <label> ingrese la cantidad que desea retirar </label>
+      @Html.TextBoxFor(monto=>monto.cantidad) 
+      <br />
+
+      <input type="submit"/> 
+
+      
+
+  }
+            
+
+      
+
+            
+
+
+ </div>
+
